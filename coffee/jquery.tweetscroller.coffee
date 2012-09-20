@@ -10,6 +10,7 @@
     template: '#tweet-template'
     username: 'divshot'
     count: 50
+    height: 600
     speed: 30 # ms, 30-80 ms recommended, slower = better performance
     autoplay: false # CPU intensive
 
@@ -24,6 +25,7 @@
       @init()
 
     init: ->
+      $(@element).height @options.height
       @checkDependencies()
       @getTweets()
 

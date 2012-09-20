@@ -3,7 +3,6 @@
 ** Divshot, Inc.
 */
 #tweets {
-  max-height: 600px;
   overflow: hidden;
   /* Increases CPU Usage */
   -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(black), to(rgba(0, 0, 0, 0)));

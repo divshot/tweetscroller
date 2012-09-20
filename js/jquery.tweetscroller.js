@@ -10,6 +10,7 @@
       template: '#tweet-template',
       username: 'divshot',
       count: 50,
+      height: 600,
       speed: 30,
       autoplay: false
     };
@@ -25,6 +26,7 @@
       }
 
       TweetScroller.prototype.init = function() {
+        $(this.element).height(this.options.height);
         this.checkDependencies();
         return this.getTweets();
       };
