@@ -1,7 +1,6 @@
 #  Project: TweetScroller
-#  Description: An infinite tweet scroller that automatically refreshes a collection of your favorite tweets.
+#  Description: A pseudo-infinite tweet scroller that automatically refreshes a collection of your favorite tweets.
 #  Author: Divshot, Inc.
-#  License: MIT
 
 (($, window) ->
   pluginName = 'tweetscroller'
@@ -30,7 +29,6 @@
 
     getTweets: ->
       $.getJSON "https://api.twitter.com/1/favorites.json?count=#{@options.count}&screen_name=#{@options.username}&callback=?", (data) =>
-        
         $(@element).append('<div class="tweetscroller"></div>')
         @board = $(@element).find('.tweetscroller')
 
