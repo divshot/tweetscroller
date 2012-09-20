@@ -12,7 +12,7 @@
     username: 'divshot'
     count: 50
     speed: 30 # ms, 30-80 ms recommended, slower = better performance
-    autoplay: false # CPU intensive, need to optimize
+    autoplay: false # CPU intensive
 
   class TweetScroller
     constructor: (@element, options) ->
@@ -68,7 +68,6 @@
             scrollActive = 0
             clearInterval(scrollInterval)
       else
-        # Warning: Autoplay eats up CPU for now (need to optimize)
         scrollInterval = setInterval(autoScroll, @options.speed)
 
     scrollRefresh: (e) ->
