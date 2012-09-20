@@ -16,18 +16,6 @@
   #tweets:after {
     clear: both;
   }
-/*  #tweets::-webkit-scrollbar {
-    width: 4px;
-  }
-  #tweets::-webkit-scrollbar-track, #tweets::-webkit-scrollbar-track-piece {
-    background-color: transparent;
-  }
-  #tweets::-webkit-scrollbar-thumb {
-    background: transparent;
-    -webkit-border-radius: 0 4px 4px 0;
-    -moz-border-radius: 0 4px 4px 0;
-    border-radius: 0 4px 4px 0;  
-  }*/
 
 .tweetscroller {
   width: 92%;
@@ -61,6 +49,7 @@
       margin: 10px;
       padding: 0;
       border: none;
+      font-weight: normal;
     }
     .tweetscroller .tweet blockquote a {
       text-decoration: none;

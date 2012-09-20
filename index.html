@@ -9,9 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="span12">
-        <div class="page-header">
-          <h1>TweetScroller</h1>
+      <div class="row">
+        <div class="span12">
+          <div class="page-header">
+            <h1>TweetScroller</h1>
+          </div>
         </div>
       </div>
       <div id="tweet-container" class="span12">
@@ -37,6 +39,76 @@
             </blockquote>
           </div>
         </script>
+      </div>
+      <div class="row">
+        <div class="span6">
+          <h2>About</h2><br>
+          <p><a href="https://github.com/divshot/tweetscroller">TweetScroller</a> is a simple jQuery plugin written in CoffeeScript that allows you to pull a collection of your favorite tweets using Twitter API v1 and display them in a fancy scroller with Masonry.</p>
+          <p>We created this for the <a href="http://divshot.com">Divshot</a> lander and decided to open source it.</p>
+        </div>
+        <div class="span6">
+          <h2>Dependencies</h2><br/>
+          <ul>
+            <li><a href="http://handlebarsjs.com/">Handlebars</a></li>
+            <li><a href="http://momentjs.com/">Moment.js</a></li>
+            <li><a href="http://masonry.desandro.com/">Masonry</a></li>
+            <li><a href="http://cherne.net/brian/resources/jquery.hoverIntent.html">hoverIntent</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6">
+          <script src="https://gist.github.com/3758527.js?file=tweet.js"></script>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>tweet</td>
+                <td>'.tweet'</td>
+                <td>Individual tweet &lt;div&gt; class.</td>
+              </tr>
+              <tr>
+                <td>template</td>
+                <td>'#tweet-template'</td>
+                <td>Handlebars template selector.</td>
+              </tr>
+              <tr>
+                <td>username</td>
+                <td>'divshot'</td>
+                <td>Twitter handle for favorite tweets.</td>
+              </tr>
+              <tr>
+                <td>count</td>
+                <td>50</td>
+                <td># of tweets to pull from Twitter. Must be less than 200.</td>
+              </tr>
+              <tr>
+                <td>height</td>
+                <td>600</td>
+                <td>Height of container (in pixels).</td>
+              </tr>
+              <tr>
+                <td>speed</td>
+                <td>30</td>
+                <td>Speed of scroller in milliseconds. 30-80ms recommended.</td>
+              </tr>
+              <tr>
+                <td>autoplay</td>
+                <td>false</td>
+                <td>True: Autoscroll. False: Scroll on hover.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="span6">
+
+        </div>
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
