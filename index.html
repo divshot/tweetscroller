@@ -47,7 +47,7 @@
           <p>We created this for the <a href="http://divshot.com">Divshot</a> lander and decided to open source it.</p>
         </div>
         <div class="span6">
-          <h2>Dependencies</h2><br/>
+          <h2>Dependencies</h2><br>
           <ul>
             <li><a href="http://handlebarsjs.com/">Handlebars</a></li>
             <li><a href="http://momentjs.com/">Moment.js</a></li>
@@ -55,9 +55,16 @@
             <li><a href="http://cherne.net/brian/resources/jquery.hoverIntent.html">hoverIntent</a></li>
           </ul>
         </div>
-      </div>
+      </div><br>
       <div class="row">
         <div class="span6">
+          <h2>Markup</h2><br>
+          <script src="https://gist.github.com/3758527.js?file=head.html"></script>
+          <script src="https://gist.github.com/3758527.js?file=markup-and-template.html"></script>
+          <script src="https://gist.github.com/3758527.js?file=footer.html"></script>
+        </div>
+        <div class="span6">
+          <h2>JavaScript</h2><br>
           <script src="https://gist.github.com/3758527.js?file=tweet.js"></script>
           <table class="table table-striped">
             <thead>
@@ -106,17 +113,14 @@
             </tbody>
           </table>
         </div>
-        <div class="span6">
-
-        </div>
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="js/handlebars.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/jquery.masonry.js"></script>
-    <script src="js/jquery.tweetscroller.js"></script>
     <script src="js/jquery.hoverIntent.js"></script>
+    <script src="js/jquery.tweetscroller.js"></script>
     <script>
       (function(){
         $('#tweets').tweetscroller({
