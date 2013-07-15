@@ -76,6 +76,11 @@
             </thead>
             <tbody>
               <tr>
+                <td>url</td>
+                <td>'tweets.herokuapp.com?callback=?'</td>
+                <td>URL to your Twitter API proxy. Must return a JSON response.</td>
+              </tr>
+              <tr>
                 <td>tweet</td>
                 <td>'.tweet'</td>
                 <td>Individual tweet &lt;div&gt; class.</td>
@@ -84,16 +89,6 @@
                 <td>template</td>
                 <td>'#tweet-template'</td>
                 <td>Handlebars template selector.</td>
-              </tr>
-              <tr>
-                <td>username</td>
-                <td>'divshot'</td>
-                <td>Twitter handle for favorite tweets.</td>
-              </tr>
-              <tr>
-                <td>count</td>
-                <td>50</td>
-                <td># of tweets to pull from Twitter. Must be less than 200.</td>
               </tr>
               <tr>
                 <td>height</td>
@@ -125,7 +120,7 @@
       (function(){
         $('#tweets').tweetscroller({
           autoplay: true,
-          username: 'divshot'
+          url: 'http://divshot-tweets.herokuapp.com/tweets?callback=?'
         });
       })(jQuery);
     </script>
