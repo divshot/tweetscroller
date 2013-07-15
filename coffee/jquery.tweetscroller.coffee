@@ -6,10 +6,9 @@
   pluginName = 'tweetscroller'
   document = window.document
   defaults =
+    url: ''
     tweet: '.tweet'
     template: '#tweet-template'
-    username: 'divshot'
-    count: 50
     height: 600
     speed: 30 # ms, 30-80 ms recommended, slower = better performance
     autoplay: false # CPU intensive
@@ -30,7 +29,7 @@
       @getTweets()
 
     getTweets: ->
-      $.getJSON "https://api.twitter.com/1/favorites.json?count=#{@options.count}&screen_name=#{@options.username}&callback=?", (data) =>
+      $.getJSON @options.url, (data) =>
         $(@element).append('<div class="tweetscroller"></div>')
         @board = $(@element).find('.tweetscroller')
 
