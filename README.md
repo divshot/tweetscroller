@@ -1,6 +1,6 @@
 # TweetScroller
 
-**TweetScroller** is a simple jQuery plugin written in CoffeeScript that allows you to pull a collection of your favorite tweets using Twitter API v1 and display them in a fancy scroller with Masonry.
+**TweetScroller** is a simple jQuery plugin written in CoffeeScript that allows you to pull a collection of your favorite tweets using Twitter API v1.1 and display them in a fancy scroller with Masonry.
 
 We created this for the [Divshot](http://divshot.com) lander and decided to open source it.
 
@@ -12,6 +12,10 @@ TweetScroller requires the following JavaScript/jQuery dependencies:
 * [Moment.js](http://momentjs.com)
 * [Masonry](http://masonry.desandro.com/)
 * [hoverIntent](http://cherne.net/brian/resources/jquery.hoverIntent.html)
+
+## Proxy Example
+
+Twitter API v1.1 now requires a server-side proxy. [Click here to view an example in Node.js](https://gist.github.com/fastdivision/7257449).
 
 ## License
 
